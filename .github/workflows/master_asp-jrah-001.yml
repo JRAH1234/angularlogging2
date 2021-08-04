@@ -23,6 +23,7 @@ jobs:
 
     - name: npm install, build, and test
       run: |
+        npm cache clean --force
         npm install -g @angular/cli@latest
         npm install -save-dev @angular-devkit/build-angular@latest
         npm install -save-dev @angular/compiler-cli@latest
