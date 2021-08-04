@@ -27,6 +27,7 @@ jobs:
         npm install -save-dev @angular-devkit/build-angular@latest
         npm install -save-dev @angular/compiler-cli@latest
         npm install -save-dev @angular/compiler@latest
+        npm install typescript@latest
         npm run build --if-present
         npm run test --if-present
 
