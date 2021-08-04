@@ -23,12 +23,7 @@ jobs:
 
     - name: npm install, build, and test
       run: |
-        npm install -g @angular/cli@latest
-        npm install -save-dev @angular-devkit/build-angular@latest
-        npm install -save-dev @angular/compiler-cli@latest
-        npm install -save-dev @angular/compiler@latest
-        npm install typescript@latest
-        npm link
+        npm install
         npm run build --if-present
         npm run test --if-present
 
