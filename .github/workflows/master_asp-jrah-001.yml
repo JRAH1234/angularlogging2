@@ -23,8 +23,9 @@ jobs:
 
     - name: npm install, build, and test
       run: |
-        npm install
-        ng update @angular/cli @angular/core --allow-dirty --force
+        npm uninstall -g @angular/cli
+        npm cache clean
+        npm install -g @angular/cli@12.0.5
         npm run build --if-present
         npm run test --if-present
 
